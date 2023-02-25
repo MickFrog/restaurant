@@ -16,4 +16,7 @@
 
     font-family: var(--gen-font);
     min-height: 100vh;
+
+    display: grid;
+    grid-template-rows: 2fr 5fr 1fr;
 }
