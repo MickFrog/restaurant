@@ -2,11 +2,17 @@
 
 :root {
     --gen-font: 'Maitree', serif;
+    --name-color: #EDF5FC;
+    --text-color: #B8C5D6;
 }
 
 * {
     box-sizing: border-box;
     margin: 0px;
+}
+
+a {
+    color: inherit;
 }
 
 #content {
@@ -18,7 +24,7 @@
     min-height: 100vh;
 
     display: grid;
-    grid-template-rows: 2fr 5fr 1fr;
+    grid-template-rows: 2fr 5fr .5fr;
 }
 
 .heading {
@@ -30,7 +36,7 @@
 }
 
 .name {
-    color: #EDF5FC;
+    color: var(--name-color);
     font-size: 4rem;
     margin-left: 10%;
 }
@@ -45,13 +51,19 @@
 
 .tabs > button {
     background-color: transparent;
-    outline: none;
     border: 0px;
     font-size: 2rem;
-    color: #B8C5D6;
-
+    color: var(--text-color);
 }
 
 .tabs > button:hover {
     border-bottom: 4px solid black;
+}
+
+.credit {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    padding-left: 10%;
+    color: var(--text-color);
 }
