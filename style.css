@@ -4,6 +4,8 @@
     --gen-font: 'Maitree', serif;
     --name-color: #EDF5FC;
     --text-color: #B8C5D6;
+    --heading-bg: rgba(49, 38, 62, 0.7);
+    --div-bg: rgba(0, 0, 0, 0.7);
 }
 
 * {
@@ -31,7 +33,7 @@ a {
     display: grid;
     gap: 1rem;
     grid-template-rows: 2fr 1fr;
-    background-color: rgba(49, 38, 62, 0.7);
+    background-color: var(--heading-bg);
 
 }
 
@@ -60,9 +62,26 @@ a {
     border-bottom: 4px solid black;
 }
 
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--text-color);
+}
+
+.middle > div {
+    width: 60%;
+
+    background-color: var(--div-bg);
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
 .credit {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--div-bg);
 
     padding-left: 10%;
     color: var(--text-color);
