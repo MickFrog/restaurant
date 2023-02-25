@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Maitree&display=swap');
+
+:root {
+    --gen-font: 'Maitree', serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+#content {
+    display: grid;
+    grid-template: 10fr .5fr / 1fr 3fr;
+
+    font-family: var(--gen-font);
+    min-height: 100vh;
+}
