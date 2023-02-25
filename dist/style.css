@@ -20,3 +20,38 @@
     display: grid;
     grid-template-rows: 2fr 5fr 1fr;
 }
+
+.heading {
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: 2fr 1fr;
+    background-color: rgba(49, 38, 62, 0.7);
+
+}
+
+.name {
+    color: #EDF5FC;
+    font-size: 4rem;
+    margin-left: 10%;
+}
+
+.tabs {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+
+    margin-left: 20%;
+}
+
+.tabs > button {
+    background-color: transparent;
+    outline: none;
+    border: 0px;
+    font-size: 2rem;
+    color: #B8C5D6;
+
+}
+
+.tabs > button:hover {
+    border-bottom: 4px solid black;
+}
