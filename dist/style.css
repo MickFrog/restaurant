@@ -10,8 +10,6 @@
 }
 
 #content {
-    display: grid;
-    grid-template: 10fr .5fr / 1fr 3fr;
 
     font-family: var(--gen-font);
     min-height: 100vh;
