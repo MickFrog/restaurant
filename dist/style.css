@@ -26,7 +26,7 @@ a {
     min-height: 100vh;
 
     display: grid;
-    grid-template-rows: 2fr 5fr .5fr;
+    grid-template-rows: 2fr 7fr .5fr;
 }
 
 .heading {
@@ -81,6 +81,7 @@ a {
 
 .credit {
     display: flex;
+    align-items: center;
     background-color: var(--div-bg);
 
     padding-left: 10%;
