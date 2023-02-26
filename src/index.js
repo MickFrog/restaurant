@@ -27,6 +27,7 @@ const headingElements = (() => {
     let homeBtn = document.createElement('button');
     homeBtn.textContent = 'Home';
     homeBtn.id = 'homeBtn';
+    homeBtn.style = 'border-bottom: .5rem solid black';
 
     let menuBtn = document.createElement('button');
     menuBtn.textContent = 'Menu';
