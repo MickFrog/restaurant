@@ -20,9 +20,11 @@ export default function produceMenu(middleDiv) {
 
     for (let i = 0; i < meals.length; i++) {
         let temp = document.createElement('div');
-        temp.innerHTML = `<p style='font-weight: 700;>'${meals[i]}</p>
+        temp.innerHTML = `<p style='font-weight: 700;'>${meals[i]}</p>
                             <hr>
                             <p>${mealDesc[i]}</p>`
+        menuDiv.appendChild(temp);
     }
+    middleDiv.appendChild(menuDiv);
 
 }

@@ -1,6 +1,7 @@
 import middle from "./initial-page";
 import { headingElements, middleElements, creditElements } from "./initial-page";
 import producemiddle from "./contacts";
+import produceMenu from "./menu";
 
 //create home page
 headingElements()
@@ -28,6 +29,12 @@ contact.addEventListener('click', () => {
     producemiddle(middle);
 
     adjustBorder(contact, menu, home);
+});
+
+menu.addEventListener('click', () => {
+    produceMenu(middle);
+
+    adjustBorder(menu, home, contact);
 });
 
 function adjustBorder(target, other1, other2) {
