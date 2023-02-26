@@ -1,3 +1,4 @@
+import "./style.css";
 import middle from "./initial-page";
 import { headingElements, middleElements, creditElements } from "./initial-page";
 import producemiddle from "./contacts";
