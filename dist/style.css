@@ -20,16 +20,17 @@ a {
 #content {
     background-image: url(./images/bg.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
 
     font-family: var(--gen-font);
     min-height: 100vh;
 
-    display: grid;
-    grid-template-rows: 200px 7fr 1fr;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .heading {
+    height: 200px;
     display: grid;
     gap: 1rem;
     grid-template-rows: 2fr 1fr;
@@ -63,6 +64,7 @@ a {
 }
 
 .middle {
+    flex: 1 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,6 +87,6 @@ a {
     align-items: center;
     background-color: var(--div-bg);
 
-    padding-left: 10%;
+    padding: 1rem;
     color: var(--text-color);
 }
