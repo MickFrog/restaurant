@@ -51,3 +51,12 @@ const middleElements = (() => {
 
     middle.appendChild(message);
 })();
+
+const creditElements = (() => {
+    let photoCredit = document.createElement('p');
+
+    photoCredit.innerHTML = 'Photo by &nbsp;<a href="https://unsplash.com/@cant89?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Davide Cantelli</a> &nbsp;on \
+    <a href="https://unsplash.com/images/food?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">&nbsp;Unsplash</a>'
+
+    credit.appendChild(photoCredit);
+})();
