@@ -42,3 +42,12 @@ const headingElements = (() => {
 
     heading.appendChild(tabs);
 })();
+
+const middleElements = (() => {
+    let message = document.createElement('div');
+    message.textContent = 'Welcome to Mick\'s Kitchen, where exquisite cuisine meets exceptional service. \
+        Our restaurant is dedicated to providing our guests with an unforgettable dining experience, \
+        from the moment they walk through our doors until they leave with satisfied palates and happy hearts.';
+
+    middle.appendChild(message);
+})();
