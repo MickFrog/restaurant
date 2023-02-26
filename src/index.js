@@ -21,17 +21,26 @@ home.addEventListener('click', () => {
 
     middleElements();
 
-    home.style = 'border-bottom: .5rem solid black';
-    //clear styles on other buttons
-    menu.style = 'border-bottom: 0px';
-    contact.style = 'border-bottom: 0px';
+    adjustBorder(home, menu, contact);
 });
 
 contact.addEventListener('click', () => {
     producemiddle(middle);
 
-    contact.style = 'border-bottom: .5rem solid black';
-    //clear styles on other buttons
-    menu.style = 'border-bottom: 0px';
-    home.style = 'border-bottom: 0px';
+    adjustBorder(contact, menu, home);
 });
+
+function adjustBorder(target, other1, other2) {
+    target.style = 'border-bottom: .5rem solid black';
+    target.onmouseover = () => {};
+
+    other1.style = 'border-bottom: 0px;';
+    other1.onmouseover = () => {
+        other1.style = 'border-bottom'
+    }
+
+    other2.style = 'border-bottom: 0px;';
+    other2.onmouseover = () => {
+        other2.style = 'border-bottom'
+    }
+}
